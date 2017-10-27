@@ -1,0 +1,22 @@
+{
+  "name": "set-file-paths",
+  "version": "1.0.0",
+  "description": "Sets the filepaths for our Canvas Conversion tool.",
+  "main": "setFilePaths.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byuitechops/set-file-paths.git"
+  },
+  "author": "Zachary Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byuitechops/set-file-paths/issues"
+  },
+  "homepage": "https://github.com/byuitechops/set-file-paths#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
