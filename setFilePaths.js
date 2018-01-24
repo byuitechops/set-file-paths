@@ -7,12 +7,11 @@
 const fs = require('fs');
 
 module.exports = (course, stepCallback) => {
-    course.addModuleReport('setFilePaths');
 
     var setDirectory = (filepath, folderName, cb) => {
         fs.readdir(filepath, (err, files) => {
             if (err) {
-                course.throwFatalErr('setFilePaths', err);
+                course.fatalError(err);
                 stepCallback(err, course);
             } else {
                 if (files.includes(folderName)) {
@@ -27,7 +26,7 @@ module.exports = (course, stepCallback) => {
     var setZipPath = (filepath, fileName, cb) => {
         fs.readdir(filepath, (err, files) => {
             if (err) {
-                course.throwFatalErr('setFilePaths', err);
+                course.fatalError(err);
                 stepCallback(err, course);
             } else {
                 if (files.includes(fileName)) {
