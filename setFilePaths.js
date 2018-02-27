@@ -1,5 +1,3 @@
-/*eslint-env node, es6*/
-
 /* Module Description */
 /* Establishes the directories used by other modules */
 
