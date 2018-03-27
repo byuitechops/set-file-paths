@@ -3,6 +3,7 @@
 
 /* Put dependencies here */
 const fs = require('fs');
+const moment = require('moment');
 
 module.exports = (course, stepCallback) => {
 
