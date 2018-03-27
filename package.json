@@ -18,5 +18,6 @@
   "homepage": "https://github.com/byuitechops/set-file-paths#readme",
   "dependencies": {
     "fs": "0.0.1-security"
-  }
+  },
+  "childType": "shell"
 }
