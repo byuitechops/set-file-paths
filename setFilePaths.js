@@ -43,6 +43,9 @@ module.exports = (course, stepCallback) => {
             course.info.processedPath = newDir;
             setZipPath(course.info.uploadZipPath, course.info.fileName, (newDir) => {
                 course.info.uploadZipPath = newDir;
+                console.log('Unzipped filepath set: ', course.info.unzippedPath);
+                console.log('Processed filepath set: ', course.info.processedPath);
+                console.log('Upload filepath set: ', course.info.uploadZipPath);
                 stepCallback(null, course);
             });
         });
